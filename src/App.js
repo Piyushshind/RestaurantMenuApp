@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { Navbar } from "./components";
+import Header from "./container/Header/Header.jsx";
+import "./App.css";
+import FindUs from "./container/Findus/FindUs.jsx";
+import AboutUs from "./container/AboutUs/AboutUs.jsx";
+import SpecialMenu from "./container/Menu/SpecialMenu.jsx";
+import Chef from "./container/Chef/Chef.jsx";
+import Intro from "./container/Intro/Intro.jsx";
+import Laurels from "./container/Laurels/Laurels.jsx";
+import Gallery from "./container/Gallery/Gallery.jsx";
+import Footer from "./container/Footer/Footer.jsx";
+
+const App = () => (
+  <div>
+    <Navbar />
+    <Header />
+    <AboutUs />
+    <SpecialMenu />
+    <Chef />
+    <Intro />
+    <Laurels />
+    <Gallery />
+    <FindUs />
+    <Footer />
+  </div>
+);
 
 export default App;
