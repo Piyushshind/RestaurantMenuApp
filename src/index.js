@@ -12,3 +12,5 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
 
 //reportWebVitals();
+// "react-app",
+//"react-app/jest"
